@@ -1,0 +1,5 @@
+The Automatic Question Tagging System falls under the category of "Natural Language Processing" (NLP) in the field of data science. Natural Language Processing involves the interaction between computers and human language, and it encompasses various tasks such as text classification, sentiment analysis, machine translation, named entity recognition, and question answering, among others.
+
+Automatic Question Tagging Systems specifically deal with the task of analyzing and tagging questions with relevant tags or categories. These systems aim to understand the content and intent of a question and assign appropriate labels that indicate the topic, subject, or domain the question pertains to. This can be useful for organizing and categorizing a large number of questions, improving search functionalities, and aiding in the retrieval of relevant information.
+
+In summary, Automatic Question Tagging Systems are a subset of Natural Language Processing and are focused on automatically assigning relevant tags or labels to questions to assist in their organization and retrieval.
