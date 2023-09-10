@@ -28,12 +28,21 @@ df['First Answer'].fillna('No Answer', inplace=True)
 df.dropna(inplace=True)
 df.drop_duplicates(inplace=True)
 
-# Cleaning the text
+# Cleaning the head
+def clean_head(text):
+    text = re.sub('[^a-zA-Z0-9+#\']', ' ', text)
+    text = text.lower()
+    text = re.sub(r'\s+', ' ', text)
+    return text
+
+df['Head'] = df['Head'].apply(clean_head)
+
+# Cleaning the body
 def clean_text(text):
     text = text.strip()
     text = text.lower()
     text = re.sub(r'[\\].', '', text)
-    text = re.sub(r'[^A-Za-z?]', ' ', text)
+    text = re.sub(r'[^A-Za-z0-9\'+#]', ' ', text)
     text = re.sub(r'\s+', ' ', text)
     return text
 
