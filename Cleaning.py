@@ -45,6 +45,7 @@ df = df[df["Tags Count"] <= 5]
 
 
 def clean_text(text):
+    text = re.sub(r"<.*?>", "", text)
     text = re.sub(r"[^a-zA-Z]", " ", text)
     text = re.sub(r"\s+", " ", text)
     text = text.lower()
